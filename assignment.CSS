@@ -1,0 +1,47 @@
+li{
+    
+    display:inline ;
+    position: relative; 
+    font-size: 20px;
+
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+
+
+
+}
+.image1{
+    width: 400px;
+    height: 400px;
+}
+img{
+    width : 400px;
+    height: 400px;
+
+}
+.images{
+     display :grid;
+     grid-template-columns: repeat(3,1fr);
+}
+@media screen and (max-width: 768px) { /* Adjusted for phones and tablets */
+    .header ul {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .body, .images {
+        display: flex;
+        flex-direction: column; /* Ensures images stack vertically */
+        padding: 50px 5%; /* Adjusted padding for smaller screens */
+        gap: 20px;
+    }
+    img {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Maintains aspect ratio */
+
+    }
+}
